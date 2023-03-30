@@ -12,3 +12,16 @@
 #    * input: [1, 2, 3]
 #      result: [1, 2], [3]
 
+def halve_the_list(single):
+    lst1 = []
+    lst2 = []
+    for count, i in enumerate(single):
+        if count == 0 or (count%2 == 0):
+            lst1.append(i)
+        else:
+            lst2.append(i)
+    return lst1, lst2
+test1 = [1,2,3,4]
+test2 = [1,2,3]
+print(halve_the_list(test1))
+print(halve_the_list(test2))

@@ -16,4 +16,17 @@
 # problem to get a good feel for how to solve it.
 
 def fizzbuzz(number):
-    pass
+    out = ''
+    if number % 3 == 0:
+        out += ("fizz")
+    if number % 5 == 0:
+        out += ("buzz")
+    if out == '':
+        return number
+    else:
+        return out
+
+print(fizzbuzz(15))
+print(fizzbuzz(12))
+print(fizzbuzz(10))
+print(fizzbuzz(8))

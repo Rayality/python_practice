@@ -7,3 +7,9 @@
 #
 # Don't for get to import math!
 
+import math
+
+def safe_divide(numerator,denominator):
+    if denominator == 0:
+        return math.inf
+    return numerator/denominator

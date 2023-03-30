@@ -11,4 +11,16 @@
 # problem to get a good feel for how to solve it.
 
 def can_make_pasta(ingredients):
-    pass
+    for item in ingredients:
+        if item != "flour":
+            if item != "eggs":
+                if item != "oil":
+                    return False
+        continue
+    return True
+
+
+lst = ["flour", "eggs", "oil"]
+lst2 = ["french","toast","penguin"]
+print(can_make_pasta(lst))
+print(can_make_pasta(lst2))

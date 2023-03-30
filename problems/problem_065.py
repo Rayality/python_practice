@@ -17,3 +17,24 @@
 #
 # You may want to look at the built-in "abs" function
 
+def biggest_gap(number_list1):
+    nums = (number_list1)
+    big_gap = 0
+    end = len(nums)-1
+    for count, num in enumerate(nums):
+
+        if count == end:
+            continue
+        elif abs(num - nums[count+1]) > big_gap:
+            big_gap = abs(num - nums[count+1])
+    return big_gap
+
+input = [1, 3, 5, 7]
+#       result: 2 because they all have the same gap
+input1 = [1, 11, 9, 20, 0]
+#       result: 20 because from 20 to 0 is the biggest gap
+input2 =  [1, 3, 100, 103, 106]
+#       result: 97 because from 3 to 100 is the biggest gap
+print(biggest_gap(input))
+print(biggest_gap(input1))
+print(biggest_gap(input2))

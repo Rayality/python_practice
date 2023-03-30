@@ -16,13 +16,21 @@
 #      result:   {"I": 3, "came": 1, "saw": 1, "learned": 1}
 #    * sentence: "Hello Hello Hello"
 #      result:   {"Hello": 3}
+def count_word_frequencies(sentence):
+    frequency = {}
+    num = 0
+    words = sentence.split()
+    for word in words:
+        for count,char in enumerate(word):
+            if char.isalpha != True:
+                word.replace(char, '')
+        num = frequency.get(word)
+        if num == 0:
+            frequency.update({word : 1})
+        else:
+            frequency.update({word : num})
+    return frequency
 
-## FUNCTION PSEUDOCODE
-# function count_word_frequencies(sentence):
-    # words = split the sentence
-    # counts = new empty dictionary
-    # for each word in words
-        # if the word is not in counts
-            # counts[word] = 0
-        # add one to counts[word]
-    # return counts
+
+sentence = "I came, I, saw I learned"
+print(count_word_frequencies(sentence))

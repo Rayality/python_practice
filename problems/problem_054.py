@@ -14,4 +14,6 @@
 #      returns: "this is a string"
 #    * input:   "raise"
 #      RAISES:  ValueError
-
+def check_input(param):
+    if param == "raise":
+        return ValueError

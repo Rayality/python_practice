@@ -11,6 +11,20 @@
 
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
-
+def get_in(question):
+    out = input(question) + ' '
+    return out
 def max_of_three(value1, value2, value3):
-    pass
+    num1 = int(value1)
+    num2 = int(value2)
+    num3 = int(value3)
+    max = 0
+    if num1 >= num2:
+        max = num1
+    elif num2 > num1:
+        max = num2
+    if num3 >= max:
+        max = num3
+    return max
+
+print(max_of_three(get_in('num1 '),get_in('num2 '),get_in('num3 ')))

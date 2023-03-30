@@ -12,5 +12,12 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
-def is_palindrome(word):
-    pass
+def is_palindrome(word1):
+    word = str(word1)
+    bword = word[::-1]
+    if str(bword) == str(word):
+        return True
+    else:
+        return False
+is_palindrome('racecar')
+is_palindrome('Me')

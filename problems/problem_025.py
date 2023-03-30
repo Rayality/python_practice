@@ -5,6 +5,14 @@
 # If the list of values is empty, the function should
 # return None
 #
+shfifty_five=[1,2,3,4,5,6,7,8,9,10]
 
 def calculate_sum(values):
-    pass
+    if len(values) == 0:
+        return None
+    sum=0
+    for num in values:
+        sum += num
+    return sum
+
+print(calculate_sum(shfifty_five))

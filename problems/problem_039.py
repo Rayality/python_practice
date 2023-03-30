@@ -13,4 +13,13 @@
 #     output: {1: "one", 2: "two", 3: "three"}
 
 def reverse_dictionary(dictionary):
-    pass
+    swapped = {}
+    keys = dictionary.keys()
+    for key in keys:
+        val = dictionary.get(key)
+        swapped.setdefault(val,key)
+    return swapped
+
+test = {"key":"lock","shwam":"do","this":"that"}
+print(test)
+print (reverse_dictionary(test))

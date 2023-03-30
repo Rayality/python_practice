@@ -22,3 +22,37 @@
 #
 # You may want to look up the ".strip()" method for the string.
 
+def sentiment(message):
+
+    happy = len(message.split(":-)"))
+
+    sad = len (message.split(":-)"))
+
+    # for word in sentilist:
+    #     if word.find("-)")>=0:
+    #         happy += 1
+    #     elif word.find("-(")>=0:
+    #         sad += 1
+    if (happy == 1) and (sad == 1):
+        print(f"happy num:{happy} +  sad num:{sad}")
+        return "none"
+    elif happy > sad:
+        print(f"happy num:{happy} +  sad num:{sad}")
+        return "happy"
+    elif sad > happy:
+        print(f"happy num:{happy} +  sad num:{sad}")
+        return "sad"
+    elif sad == happy:
+        print(f"happy num:{happy} +  sad num:{sad}")
+        return "unsure"
+    else:
+        print(happy + sad)
+face = ":-:-:(:-)"
+wtf1 =":):(-)-:-:)"
+wtf2 = ":-))):-):-((((:-a:-))):-):-((((:-a:-))):-):-((((:-a:-))):-):-((((:-a:-))):-):-((((:-a:-))):-):-((((:-a:-))):-):-((((:-a:-))):-):-((((:-a:-))):-):-((((:-a:-))):-):-((((:-a"
+none = "there are no emoticons"
+wtf3 = ":-(:-((()):-))):-:-(:-((()):-))):-:-(:-((()):-))):-:-(:-((()):-))):-:-(:-((()):-))):-:-(:-((()):-))):-:-(:-((()):-))):-:-(:-((()):-))):-:-(:-((()):-))):-:-(:-((()):-))):-"
+zero = ".F.F"
+print(sentiment(wtf3))
+print(wtf3.split(":-)"))
+print(wtf3.split(":-("))

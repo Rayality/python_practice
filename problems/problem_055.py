@@ -28,3 +28,6 @@
 #     * input: 10
 #       returns:  "X"
 
+def simple_roman(val):
+    numerals = ['I','II','III','IV','V','VI','VII','VIII','IX','X']
+    return numerals[val-1]

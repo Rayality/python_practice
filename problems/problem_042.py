@@ -13,4 +13,17 @@
 # Look up the zip function to help you with this problem.
 
 def pairwise_add(list1, list2):
-    pass
+    doodah = zip(list1,list2)
+    added=[]
+    for tup in doodah:
+        total = 0
+        for num in tup:
+            total += num
+        added.append(total)
+    return added
+
+
+
+list1 = [100, 200, 300]
+list2 = [ 10,   1, 180]
+print(pairwise_add(list1,list2))

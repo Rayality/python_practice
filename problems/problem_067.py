@@ -35,3 +35,18 @@
     # method get_email(self)
         # returns self.first_name.lower() + "." + self.last_name.lower()
         #         + "@company.com"
+class Employee:
+    def __init__(self, first_name, last_name):
+        self.fn = str(first_name)
+        self.ln = str(last_name)
+    def get_fullname(self):
+        full = str(f"{self.fn} {self.ln}")
+        return full
+    def get_email(self):
+        email = str(f"{self.fn.lower()}.{self.ln.lower()}@company.com")
+        return email
+employee = Employee("Duska", "Ruzicka")
+name = employee.get_email()
+mail = employee.get_fullname()
+print(name)
+print(mail)

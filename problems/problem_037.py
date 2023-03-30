@@ -24,4 +24,7 @@
 #     result: "   19"
 
 def pad_left(number, length, pad):
-    pass
+    for _ in range(length-(len(number)-1)):
+        print(pad,end='')
+    print(number)
+pad_left(500,6,'*')

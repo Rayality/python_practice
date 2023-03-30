@@ -24,4 +24,13 @@
 # at the last one you just wrote unless you really must.
 
 def count_letters_and_digits(s):
-    pass
+    s = str(s)
+    num_nums = 0
+    num_char = 0
+    for val in s:
+        if val.isdigit():
+            num_nums += 1
+        elif val.isalpha():
+            num_char += 1
+    return num_nums, num_char
+print(count_letters_and_digits("abc1234567tuv"))

@@ -9,3 +9,6 @@
 #      y: 4
 #      result: 7
 
+def sum_two_numers(one,two):
+    out = one +two
+    return out

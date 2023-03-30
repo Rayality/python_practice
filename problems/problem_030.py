@@ -12,4 +12,8 @@
 # problem to get a good feel for how to solve it.
 
 def find_second_largest(values):
-    pass
+    ordered = sorted(values)
+    sec_large = ordered.pop(-2)
+    return sec_large
+lst = [9,1,8,2,7,3,4,14,5,6,7,8,9,0,]
+find_second_largest(lst)
