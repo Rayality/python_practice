@@ -46,16 +46,12 @@ When you feel challenged, you learn. Embrace the challenge!
 
 > "The only person you need to be better than is the person you were yesterday."
 
-### Solutions
-
-If you get stuck, each problem has a corresponding solution in _solutions/_.
-
 ## Getting Started
 
 1. Fork the repository
 2. Clone the forked repository
 3. Open _problems/problem_001.py_ to read the specification and fill in the code
-4. Test your solution with sample input to ensure it runs according to the 
+4. Test your solution with sample input to ensure it runs according to the
 problem specifications.
 5. Go on to "002" and keep going until you hit "080"
 
