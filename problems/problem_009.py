@@ -15,9 +15,10 @@
 def is_palindrome(word1):
     word = str(word1)
     bword = word[::-1]
-    if str(bword) == str(word):
+    if bword == word:
         return True
-    else:
-        return False
+    return False
+
+
 is_palindrome('racecar')
 is_palindrome('Me')

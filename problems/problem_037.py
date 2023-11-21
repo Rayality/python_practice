@@ -23,8 +23,10 @@
 #     pad:    " "
 #     result: "   19"
 
+
 def pad_left(number, length, pad):
-    for _ in range(length-(len(number)-1)):
-        print(pad,end='')
-    print(number)
-pad_left(500,6,'*')
+    string_num = str(number)
+    return f"{pad}" * (length - len(string_num)) + string_num
+
+
+print(pad_left(500, 6, '*'))

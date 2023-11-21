@@ -23,9 +23,7 @@
 #                "I watch Portal", "I watch Sable",
 #                "You play Portal", "You play Sable"
 #                "You watch Portal", "You watch Sable"]
-#
-# Do it without pseudocode, this time, from memory. Don't look
-# at the last one you just wrote unless you really must.
+
 
 def make_sentences(subjects, verbs, objects):
     sentences = []
@@ -35,6 +33,8 @@ def make_sentences(subjects, verbs, objects):
                 joined = (subject+" "+ verb +" "+ object)
                 sentences.append(joined)
     return sentences
+
+
 subjects = ["I", "You"]
 verbs = ["play", "watch"]
 objects = ["Portal", "Sable"]

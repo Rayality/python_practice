@@ -19,9 +19,11 @@
 # There is pseudocode availabe for you to guide you
 
 class Book:
-    def __init__(self,author_name, book_title):
-         self.get_author = print(f"Author: {author_name}")
-         self.get_title = print(f"Title: {book_title}")
+    def __init__(self, author_name, book_title):
+        self.get_author = print(f"Author: {author_name}")
+        self.get_title = print(f"Title: {book_title}")
+
+
 book = Book("Natalie Zina Walschots", "Hench")
 book.get_author
 book.get_title

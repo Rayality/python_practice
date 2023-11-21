@@ -20,18 +20,20 @@ def ninety_problems():
         print(problems)
     return (problems)
 
+
 def calculate_grade(values):
     avg = sum(values)/len(values)
-    if avg >= 90:
-        return "A"
-    elif avg >=80:
-        return "B"
-    elif avg >=70:
-        return "C"
-    elif avg >=60:
+    if avg >= 60:
+        if avg >= 70:
+            if avg >= 80:
+                if avg >= 90:
+                    return "A"
+                return "B"
+            return "C"
         return "D"
-    else:
-        return "F"
+    return "F"
+
+
 probs = ninety_problems()
 lst = list(probs)
 print(probs)

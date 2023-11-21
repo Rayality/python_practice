@@ -15,8 +15,9 @@
 #       parameter 2: 0
 #     returns: "92380"
 
-def num_concat(numerical1,numerical2):
-    return numerical1 + numerical2
+def num_concat(numerical1, numerical2):
+    return f"{numerical1}{numerical2}"
+
 
 param1 = 3
 param2 = 10

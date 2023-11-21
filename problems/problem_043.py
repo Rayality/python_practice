@@ -20,11 +20,12 @@
 # Look up the enumerate function to help you with this problem.
 
 def find_indexes(search_list, search_term):
-    found_at=[]
-    for count,term in enumerate(search_list):
+    new_list = []
+    for ind, term in enumerate(search_list):
         if term == search_term:
-            found_at.append(count)
-    return found_at
+            new_list.append(ind)
+    return new_list
 
-nums = [1,5,2,5,6,5,4,5]
-print(find_indexes(nums,5))
+
+nums = [1, 5, 2, 5, 6, 5, 4, 5]
+print(find_indexes(nums, 5))

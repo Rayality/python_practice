@@ -12,18 +12,11 @@
 #
 # Look up the zip function to help you with this problem.
 
-def pairwise_add(list1, list2):
-    doodah = zip(list1,list2)
-    added=[]
-    for tup in doodah:
-        total = 0
-        for num in tup:
-            total += num
-        added.append(total)
-    return added
 
+def pairwise_add(list1, list2):
+    return [i + j for i, j in zip(list1, list2)]
 
 
 list1 = [100, 200, 300]
-list2 = [ 10,   1, 180]
-print(pairwise_add(list1,list2))
+list2 = [10, 1, 180]
+print(pairwise_add(list1, list2))

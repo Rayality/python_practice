@@ -24,33 +24,25 @@
 #    print(person.taste("sauerkraut"))  # Prints False, in the hated list
 #    print(person.taste("pizza"))       # Prints True, in the loved list
 
+
 class Person:
-    def __init__(self,persons_name,hated_foods,loved_foods):
+    def __init__(self, persons_name, hated_foods, loved_foods):
         self.name = persons_name
         self.hated = hated_foods
         self.loved = loved_foods
-    def taste(self,food):
-        if len(self.loved) >= len(self.hated):
-            longest = self.loved
-            shortest = self.hated
-        else:
-            longest = self.hated
-            shortest = self.loved
-        for count,item in enumerate(longest):
-            if food == item:
-                return True
-            if count < len(shortest):
-                for item in shortest:
-                    if food == item:
-                        return False
+
+    def taste(self, food):
+        if food in self.loved:
+            return True
+        elif food in self.hated:
+            return False
         else:
             return None
 
 
-
 hated_foods = ["cottage cheese", "sauerkraut"]
 loved_foods = ["pizza", "schnitzel"]
-person = Person("Malik",hated_foods,loved_foods)
+person = Person("Malik", hated_foods, loved_foods)
 
 print(person.taste("lasagna"))     # Prints None, not in either list
 print(person.taste("sauerkraut"))  # Prints False, in the hated list

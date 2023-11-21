@@ -26,6 +26,7 @@ def fizzbuzz(number):
     else:
         return out
 
+
 print(fizzbuzz(15))
 print(fizzbuzz(12))
 print(fizzbuzz(10))

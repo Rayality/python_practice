@@ -22,42 +22,12 @@
 # "ord" and "chr" for this problem
 
 def shift_letters(word):
-    nums = []
-    shifted = ''
-    for char in word:
-        char_num = ord(char)+1
-        new_char = chr(char_num)
-        if new_char.isalpha():
-            pass
-        elif new_char == "{":
-            new_char = "a"
-        elif new_char == "[":
-            new_char = "A"
-        nums.append(new_char)
-    shifted = shifted.join(nums)
-    return shifted
+    a = "abcdefghijklmnopqrstuvwxyz"
+    b = "bcdefghijklmnopqrstuvwxyza"
+    low_table = str.maketrans(a, b)
+    up_table = str.maketrans(a.upper(), b.upper())
+    return word.translate(low_table).translate(up_table)
 
-
-
-
-
-# def shift_letters(word):
-#     shifted = str(word)
-#     numbered = []
-#     for i in shifted:
-#         num = ord(i)
-#         num += 1
-#         if num not in numbered:
-#             numbered.append(num)
-#     numbered = sorted(numbered)
-#     numbered = numbered.reverse()
-#     for i in numbered:
-#         char = (chr(i))
-#         shifted = shifted.replace(i,str(char))
-#     if char == '{':
-#             char = 'a'
-#     shifted.replace('[','A')
-#     return shifted
 
 inputs = "import"
 #       result:  "jnqpsu"

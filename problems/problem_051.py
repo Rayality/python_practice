@@ -9,7 +9,8 @@
 
 import math
 
-def safe_divide(numerator,denominator):
+
+def safe_divide(numerator, denominator):
     if denominator == 0:
         return math.inf
     return numerator/denominator

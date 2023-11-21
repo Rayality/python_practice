@@ -13,13 +13,12 @@
 #     * input:   3
 #       returns: 1/2 + 2/3 + 3/4
 
+
 def sum_fraction_sequence(a_number):
     out = ""
-    for i in range(1,a_number+1):
-        if i == 1:
-            out += str(f"{i}/{i+1}")
-        else:
-            out += str(f" + {i}/{i+1}")
-    return out
+    for i in range(1, a_number + 1):
+        out += str(f"{i}/{i+1} + ")
+    return out[:-3]
 
-print(sum_fraction_sequence(3))
+
+print(sum_fraction_sequence(1))

@@ -17,13 +17,15 @@
 
 import random
 
+
 def generate_lottery_numbers():
     out = []
-    while len(out)<6:
-        num = random.randint(0,40)
+    while len(out) < 6:
+        num = random.randint(1, 40)
         if num not in out:
             out.append(num)
-    out = sorted(out)
+    out.sort()
     return out
+
 
 print(generate_lottery_numbers())

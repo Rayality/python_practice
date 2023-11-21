@@ -20,12 +20,13 @@ def sum_of_first_n_numbers(limit):
         return None
     total = 0
     for num in range(limit+1):
-        print(num,end='')
+        print(num, end='')
         if num != limit:
-            print('+',end='')
+            print('+', end='')
         else:
-            print('=',end='')
+            print('=', end='')
         total += num
     print(total)
+
 
 sum_of_first_n_numbers(10)

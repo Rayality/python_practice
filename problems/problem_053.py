@@ -15,9 +15,10 @@
 #    * input:   "basia_farid+test@yahoo.com"
 #      returns: "basia_farid+test"
 
+
 def username_from_email(email):
-    out = email.rsplit('@')
-    return out[0]
+    return email.rsplit('@')[0]
+
 
 inp = "basia@yahoo.com"
 inpu = "basia.farid@yahoo.com"

@@ -12,7 +12,9 @@ def is_inside_bounds(x, y):
     else:
         print(y, "is not in range.")
     print("\n")
-is_inside_bounds(3,7)
-is_inside_bounds(5,-2)
-is_inside_bounds(13,2)
-is_inside_bounds(18,15)
+
+
+is_inside_bounds(3, 7)
+is_inside_bounds(5, -2)
+is_inside_bounds(13, 2)
+is_inside_bounds(18, 15)

@@ -31,4 +31,6 @@ def count_letters_and_digits(s):
         elif val.isalpha():
             num_char += 1
     return num_nums, num_char
+
+
 print(count_letters_and_digits("abc1234567tuv"))

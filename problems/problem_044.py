@@ -22,10 +22,12 @@ def translate(key_list, dictionary):
     for key in key_list:
         vals.append(dictionary.get(key))
     return vals
-dictionary =  {"name": "Noor", "age": 29}
+
+
+dictionary = {"name": "Noor", "age": 29}
 keys1 = ["name", "age"]
 keys2 = ["eye color", "age"]
 keys3 = ["age", "age", "age"]
-print(translate(keys1,dictionary))
-print(translate(keys2,dictionary))
-print(translate(keys3,dictionary))
+print(translate(keys1, dictionary))
+print(translate(keys2, dictionary))
+print(translate(keys3, dictionary))

@@ -19,5 +19,7 @@ def is_inside_bounds(x, y, rect_x, rect_y, rect_width, rect_height):
         return True
     else:
         return False
-print(is_inside_bounds(5,4,1,2,6,4))
-print(is_inside_bounds(5,6,1,2,3,5))
+
+    
+print(is_inside_bounds(5, 4, 1, 2, 6, 4))
+print(is_inside_bounds(5, 6, 1, 2, 3, 5))

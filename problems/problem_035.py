@@ -20,8 +20,6 @@
 # this:
 #      return value1, value2
 #
-# Do it without pseudocode, this time, from memory. Don't look
-# at the last one you just wrote unless you really must.
 
 def count_letters_and_digits(s):
     s = str(s)
@@ -33,4 +31,6 @@ def count_letters_and_digits(s):
         elif val.isalpha():
             num_char += 1
     return num_nums, num_char
+
+
 print(count_letters_and_digits("abc1234567tuv"))

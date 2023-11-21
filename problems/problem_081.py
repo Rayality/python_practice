@@ -14,12 +14,15 @@
 #                                + str(self.number_of_legs)
 #                                + " legs and is primarily "
 #                                + self.primary_color
+
+
 class Animal:
     def __init__(self, number_of_legs, primary_color):
         self.legs = number_of_legs
         self.color = primary_color
+
     def describe(self):
-        description = str(f"{self.__class__.__name__} has {str(self.legs)} legs and is primarily {self.color}.")
+        return f"{self.__class__.__name__} has {self.legs} legs and is primarily {self.color}."
 #
 # Name:       Dog, inherits from Animal
 #
@@ -27,19 +30,22 @@ class Animal:
 #
 # Behavior:
 #    * speak()          # Returns the string "Bark!"
+
+
 class Dog(Animal):
     def speak():
         speak = "Bark!"
         return speak
-#
-#
+
+
 # Name:       Cat, inherits from Animal
+
+
 class Cat(Animal):
     def speak():
-        speak = "Miao"
-        return speak
+        return "Miao"
+
 
 class Snake(Animal):
     def speak():
-        speak = "Sssssss!"
-        return speak
+        return "Sssssss!"

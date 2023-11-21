@@ -34,7 +34,9 @@ def basic_calculator(num_one, oper, num_two):
     elif oper == "/":
         out = num_one / num_two
     return out
-print(basic_calculator(10,"+",12))
-print(basic_calculator(10,"-",12))
-print(basic_calculator(10,"*",12))
-print(basic_calculator(10,"/",12))
+
+
+print(basic_calculator(10, "+", 12))
+print(basic_calculator(10, "-", 12))
+print(basic_calculator(10, "*", 12))
+print(basic_calculator(10, "/", 12))

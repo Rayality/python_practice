@@ -22,18 +22,11 @@
 
 
 def add_csv_lines(csv_lines):
-#create new list
     added = []
-#iterrate through each string in list
     for set in csv_lines:
-        #separate each number by splitting at the comma
-        val_lst = set.split(',')
-        total = 0
-        #total up the numbers and store in new list
-        for num in val_lst:
-            total += int(num)
-        added.append(total)
+        added.append(sum([int(i) for i in set.split(",")]))
     return added
 
-lines = ["1,5,7", "2,4,6","1,2,3,4,5,6,7,8,9,10"]
+
+lines = ["1,5,7", "2,4,6", "1,2,3,4,5,6,7,8,9,10", "1"]
 print(add_csv_lines(lines))

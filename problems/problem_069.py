@@ -5,20 +5,17 @@
 # Required state:
 #    * name, a string
 class Student:
-    def __init__(self,name):
+    def __init__(self, name):
         self.scores = []
-    def add_score(self,score):
+
+    def add_score(self, score):
         self.scores.append(score)
+
     def get_average(self):
-        total = 0
-        avg = 0
-        for entry in self.scores:
-            total += entry
+        total = sum(self.scores)
         if total == 0:
             return None
-        avg = total/len(self.scores)
-        return avg
-
+        return total//len(self.scores)
 
 
 # Behavior:

@@ -19,16 +19,20 @@
 #    account.deposit(120)
 #    print(account.get_balance())  # prints 170
 class BankAccount:
-    def __init__(self,opening_balance):
+    def __init__(self, opening_balance):
         self.bal = opening_balance
+
     def get_balance(self):
         return self.bal
+
     def deposit(self, ammount):
         self.bal += ammount
         return
+
     def withdraw(self, ammount):
         self.bal -= ammount
         return
+
 
 account = BankAccount(100)
 #

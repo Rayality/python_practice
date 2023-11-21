@@ -10,6 +10,7 @@
 def is_divisible_by_5(number):
     if number % 5 == 0:
         return "buzz"
-    else:
-        return number
+    return number
+
+
 print(is_divisible_by_5(25))
